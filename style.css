@@ -16,7 +16,7 @@ body {
   padding: 24px;
 }
 .sidebar .logo img {
-  width: 70px;
+  width: 60px;
 }
 .sidebar .navigation ul {
   list-style: none;
@@ -30,26 +30,19 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 13px;
+  transition: all 0.2s ease-in-out;
 }
 .sidebar .navigation ul li a:hover,
 .sidebar .navigation ul li a:active,
 .sidebar .navigation ul li a:focus {
   color: #ffffff;
 }
-.sidebar .navigation ul li a:hover .fa,
-.sidebar .navigation ul li a:active .fa,
-.sidebar .navigation ul li a:focus .fa {
-  color: #b3b3b3;
-}
+
 .sidebar .navigation ul li .fa {
   font-size: 20px;
   margin-right: 10px;
 }
-.sidebar .navigation ul li a:hover .fa:hover,
-.sidebar .navigation ul li a:active .fa:active,
-.sidebar .navigation ul li a:focus .fa:focus {
-  color: #ffffff;
-}
+
 .sidebar .policies {
   position: absolute;
   bottom: 100px;
@@ -117,12 +110,7 @@ body {
   color: #ffffff;
   font-size: 15px;
 }
-.topbar .navbar ul li.divider {
-  color: #ffffff;
-  font-size: 26px;
-  margin: 0 20px;
-  width: auto;
-}
+
 .topbar .navbar button {
   background-color: #ffffff;
   color: #000000;
@@ -133,6 +121,7 @@ body {
   border-radius: 40px;
   cursor: pointer;
   margin-left: 20px;
+  transition: all 0.2s ease-in-out;
 }
 .topbar .navbar button:hover,
 .topbar .navbar button:active,
@@ -147,6 +136,18 @@ body {
   font-size: 22px;
   margin-bottom: 20px;
 }
+.music-playlist h3 {
+  margin-top: 7px;
+  float: right;
+  color: #ffffff9c;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.music-playlist a h3:hover {
+  text-decoration: underline;
+}
 .music-playlist .list {
   display: flex;
   gap: 20px;
@@ -154,7 +155,7 @@ body {
 }
 .music-playlist .list .item {
   min-width: 140px;
-  width: 160px;
+  width: 180px;
   padding: 15px;
   background-color: #181818;
   border-radius: 6px;
@@ -220,6 +221,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   margin-bottom: 10px;
+  letter-spacing: 1.5px;
 }
 .preview p {
   color: #ffffff;
@@ -234,4 +236,9 @@ body {
   padding: 14px 30px;
   border: 0;
   border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.preview button:hover {
+  background-color: #dfdbdb;
 }
